@@ -90,8 +90,8 @@ WHERE housing.uniqueid = cte.uniqueid
 
 UPDATE housing
 SET soldasvacant = case when soldasvacant = 'Y' then 'Yes'
-	 					when soldasvacant = 'N' then 'No'
-						else soldasvacant end
+	 		when soldasvacant = 'N' then 'No'
+			else soldasvacant end
 
 -- Delete Unused Columns: ALTER TABLE, DROP COLUMN
 
